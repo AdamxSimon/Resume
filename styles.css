@@ -26,6 +26,7 @@ body {
 #resume-header-container {
   height: fit-content;
   width: 100%;
+  margin-bottom: 8px;
   display: flex;
 }
 
@@ -43,6 +44,17 @@ body {
   align-items: center;
   text-align: center;
   font-size: 24px;
+  font-weight: bold;
+}
+
+.resume-section {
+  flex: 1;
+}
+
+.resume-section-header {
+  background-image: linear-gradient(to right, lavender, white);
+  padding: 4px;
+  border-radius: 4px;
   font-weight: bold;
 }
 
