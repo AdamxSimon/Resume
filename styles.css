@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  height: 100%;
+  background-color: lavender;
+  padding: 24px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#resume {
+  height: 1000px;
+  width: 850px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 8px gray;
+  display: flex;
+  flex-direction: column;
+}
+
+#resume-header-container {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+}
+
+.resume-header-section {
+  flex: 1;
+}
+
+.resume-header-section:last-child {
+  text-align: right;
+}
+
+#name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media print {
+  body {
+    padding: 0;
+  }
+
+  #resume {
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
