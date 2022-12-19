@@ -12,6 +12,11 @@ body {
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 #resume {
   height: 1100px;
   width: 850px;
