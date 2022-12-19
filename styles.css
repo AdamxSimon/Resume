@@ -89,13 +89,14 @@ li {
   gap: 8px;
 }
 
-.career-item {
+.career-item,
+.application-item {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.career-item-position-container {
+.career-item-header {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -114,6 +115,23 @@ li {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.application-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.application-item-technologies {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.application-item-description > i {
+  font-size: 14px;
 }
 
 @media print {
