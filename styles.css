@@ -1,31 +1,41 @@
 * {
   box-sizing: border-box;
   font-family: Helvetica;
+  color: rgb(70, 70, 70);
+}
+
+html,
+body {
+  height: fit-content;
+  width: 100%;
 }
 
 body {
-  height: 100%;
-  width: 100vw;
-  background-color: lavender;
-  padding: 24px;
+  background-color: white;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  overflow: scroll;
+  position: relative;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(70, 70, 70);
+}
+
+ul {
+  padding-left: 14px;
+  margin-block: 0;
+  list-style-position: outside;
 }
 
 li {
+  margin: 4px 0;
   font-size: 14px;
 }
 
 #resume {
   height: 1100px;
   width: 850px;
+  margin: 24px auto;
   background-color: white;
   padding: 16px;
   border-radius: 4px;
@@ -39,31 +49,29 @@ li {
   width: 100%;
   margin-bottom: 8px;
   display: flex;
-}
-
-.resume-header-section {
-  flex: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
 #name {
+  min-width: max-content;
+  flex: 1;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  text-align: center;
-  font-size: 24px;
   font-weight: bold;
+  font-size: 24px;
 }
 
 #contact {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   gap: 4px;
   font-size: 12px;
 }
 
 .pill {
-  width: fit-content;
+  width: max-content;
   background-color: lightgreen;
   padding: 8px;
   border-radius: 4px;
@@ -84,8 +92,7 @@ li {
 
 .resume-section-header {
   padding: 4px 0;
-  border-bottom: 2px solid black;
-  font-size: 16px;
+  border-bottom: 2px solid rgb(70, 70, 70);
   font-weight: bold;
 }
 
@@ -104,24 +111,22 @@ li {
   gap: 8px;
 }
 
-.career-item-header {
+.career-item-header,
+.application-item-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
 
 .career-item-position-container,
 .education-info-container,
 .reference-info-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-}
-
-.career-item-position-company,
-.education-info-degree,
-.reference-position {
-  padding-left: 8px;
-  border-left: 2px solid black;
 }
 
 .career-item-position-dates,
@@ -130,8 +135,10 @@ li {
 }
 
 .career-item-technologies,
-.application-item-technologies {
+.application-item-technologies,
+.reference-skills {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   font-size: 12px;
 }
@@ -142,42 +149,87 @@ li {
   gap: 4px;
 }
 
-.application-item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
+.application-item-description {
+  font-size: 14px;
 }
 
-.application-item-description > i {
-  font-size: 14px;
+#education-section-content {
+  justify-content: center;
 }
 
 .reference-item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
 
-.reference-contact {
-  font-size: 12px;
-}
-
-.hobbies-container {
+.technologies-container {
   flex: 1;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
   font-size: 12px;
 }
 
+#unsupported {
+  height: 100vh;
+  background-color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 @media print {
   body {
+    height: 100%;
+    margin: 0;
+  }
+
+  #resume {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  #unsupported {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: white;
     padding: 0;
   }
 
   #resume {
-    height: 100vh;
+    height: fit-content;
+    width: 100%;
     border-radius: 0;
     box-shadow: none;
+    margin: 0;
+  }
+
+  .resume-section-content {
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #resume {
+    display: none;
+  }
+
+  #unsupported {
+    display: flex;
   }
 }

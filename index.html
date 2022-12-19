@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Resume</title>
   </head>
+
   <body>
     <div id="resume">
       <div id="resume-header-container">
@@ -14,6 +15,7 @@
           id="name"
           class="resume-header-section"
           href="https://www.linkedin.com/in/adam-simon-780013224/"
+          target="_blank"
           >Adam Simon</a
         >
 
@@ -32,47 +34,91 @@
           <div class="career-item">
             <div class="career-item-header">
               <div class="career-item-position-container">
-                <div class="career-item-position-name">Software Engineer</div>
+                <a
+                  class="career-item-position-name pill"
+                  href="https://evernote.com"
+                  target="_blank"
+                >
+                  Software Engineer
+                </a>
                 <div class="career-item-position-company">
                   Evernote - Growth
                 </div>
-                <i class="career-item-position-dates">(May 2022 - Present)</i>
+                <i class="career-item-position-dates"
+                  >(May 2022 - February 2023)</i
+                >
               </div>
 
               <div class="career-item-technologies">
                 <div class="tag">React</div>
                 <div class="tag">React Native</div>
-                <div class="tag">Typescript</div>
-                <div class="tag">Node</div>
-                <div class="tag">CSS</div>
-                <div class="tag">Git</div>
+                <div class="tag">TypeScript</div>
+                <div class="tag">Node.js</div>
+                <div class="tag">GraphQL</div>
               </div>
             </div>
 
             <div class="career-item-bullets">
-              <li>
-                Developed client-side code for experiments aimed at improving
-                new and existing user retention
-              </li>
-              <li>
-                Worked within the experiments service to deliver experiment data
-                across clients and release versions
-              </li>
-              <li>
-                Implemented experiments, bug fixes, and feature improvements in
-                the desktop, web, and mobile apps
-              </li>
+              <ul>
+                <li>
+                  Developed client and server-side code for product experiments
+                  that A/B tested new features aimed at improving user retention
+                  and activation for an application with over 250 million users
+                  across the world
+                </li>
+                <li>
+                  Brought the onboarding experience and over 20 other new user
+                  experiments from their conception to release over the course
+                  of two-week sprint cycles leading to a 2% lift in new user
+                  retention per experiment on average
+                </li>
+                <li>
+                  Streamlined the flow manager, a system designed to organize
+                  all ongoing experiments and assign them each a series of UI
+                  actions, across clients in order to more easily provide users
+                  with a variety of experimental onboarding tutorials
+                </li>
+                <li>
+                  Improved and maintained the tooltip system in all clients, so
+                  that tooltips could easily be built into onboarding tutorial
+                  flows and developers throughout the company could easily
+                  implement tooltip functionality in their own work
+                </li>
+                <li>
+                  Configured growth experiment treatment arms, both eligibility
+                  and behavior, through a Node.js microservice
+                </li>
+                <li>
+                  Contributed over 100 pull requests across the desktop, web,
+                  and mobile clients and services using Bitbucket as a hosting
+                  service and method of code review
+                </li>
+                <li>
+                  Ensured code quality through testing with Jest and various QA
+                  engineers, as well as measured performance and built the
+                  applications for various devices using Jenkins
+                </li>
+                <li>
+                  Collaborated with engineers, product managers, and designers,
+                  often across teams, using Slack and Jira as modes of
+                  communication and ticketing
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="career-item">
             <div class="career-item-header">
               <div class="career-item-position-container">
-                <div class="career-item-position-name">
+                <a
+                  class="career-item-position-name pill"
+                  href="https://www.youtube.com/@simonsoundstudio9870"
+                  target="_blank"
+                >
                   Audio Production Engineer
-                </div>
+                </a>
                 <div class="career-item-position-company">
-                  Simon Sound Studio - Self-Employed
+                  Simon Sound Studio - Owner
                 </div>
                 <i class="career-item-position-dates"
                   >(December 2018 - May 2022)</i
@@ -80,30 +126,31 @@
               </div>
 
               <div class="career-item-technologies">
-                <div class="tag">Project Management</div>
+                <div class="tag">Visual Basic For Applications</div>
               </div>
             </div>
 
             <div class="career-item-bullets">
-              <li>
-                Provide audio production services for over 50 podcast episodes,
-                audiobooks, and radio segments
-              </li>
-              <li>
-                Host an audio production YouTube channel with over 120,000 views
-                and 5,000 watch hours
-              </li>
-              <li>
-                Teach beginner to intermediate level music theory and
-                instrumentation to over 30 clients
-              </li>
+              <ul>
+                <li>
+                  Developed productivity and organization applications using VBA
+                  to assist in providing audio production services for over 100
+                  podcast episodes, audiobooks, and radio segments
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="career-item">
             <div class="career-item-header">
               <div class="career-item-position-container">
-                <div class="career-item-position-name">Research Analyst</div>
+                <a
+                  class="career-item-position-name pill"
+                  href="https://www.ipsos.com/en-us"
+                  target="_blank"
+                >
+                  Research Analyst
+                </a>
                 <div class="career-item-position-company">
                   Ipsos - Customer Experience
                 </div>
@@ -118,18 +165,12 @@
             </div>
 
             <div class="career-item-bullets">
-              <li>
-                Developed over 20 Ford event surveys to measure product
-                awareness and customer satisfaction
-              </li>
-              <li>
-                Analyzed data across thousands of respondents and visualized
-                findings for client presentations
-              </li>
-              <li>
-                Developed macros within Excel to verify the data integrity of
-                weekly survey submissions
-              </li>
+              <ul>
+                <li>
+                  Created applications using VBA which analyzed and visualized
+                  data sets containing over 10,000 Ford survey respondents
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -137,32 +178,30 @@
 
       <div class="resume-section">
         <div class="resume-section-header">Applications</div>
+
         <div class="resume-section-content">
           <div class="application-item">
             <div class="application-item-header">
               <a
                 class="application-item-name pill"
-                href="https://adamxsimon.github.io/ReQuest/"
+                href="https://adamxsimon.github.io/ReQuest"
+                target="_blank"
                 >ReQuest</a
               >
               <div class="application-item-technologies">
                 <div class="tag">React</div>
                 <div class="tag">TypeScript</div>
-                <div class="tag">CSS</div>
                 <div class="tag">REST API</div>
-                <div class="tag">Git</div>
               </div>
             </div>
 
             <div class="application-item-description">
-              <i
-                >A responsive DnD 5e character sheet management tool that allows
-                users to store and build multiple characters on their desktop or
-                mobile web browser. It also provides the option to download save
-                data, so that it can be transferred between devices. Utilizing
-                the DnD 5e REST API, this app allows for almost effortless spell
-                management.</i
-              >
+              A responsive DnD 5e character sheet management application that
+              allows users to store and build multiple characters on their
+              desktop or mobile web browser. It also provides the option to
+              download save data, so that it can be transferred between devices.
+              Using the DnD 5e REST API, this application allows for almost
+              effortless spell management.
             </div>
           </div>
 
@@ -170,48 +209,22 @@
             <div class="application-item-header">
               <a
                 class="application-item-name pill"
-                href="https://adamxsimon.github.io/Project-Time/"
+                href="https://adamxsimon.github.io/Project-Time"
+                target="_blank"
                 >Project Time</a
               >
               <div class="application-item-technologies">
                 <div class="tag">React</div>
                 <div class="tag">TypeScript</div>
-                <div class="tag">CSS</div>
-                <div class="tag">Git</div>
               </div>
             </div>
 
             <div class="application-item-description">
-              <i
-                >A dynamically built and scalable project management app that
-                organizes a user's active projects. It also allows users to time
-                working sessions and accrue coins that can be spent on a larger
-                number of active project slots or future feature releases. This
-                app is optimized for both desktop and mobile clients.</i
-              >
-            </div>
-          </div>
-
-          <div class="application-item">
-            <div class="application-item-header">
-              <a
-                class="application-item-name pill"
-                href="https://adamxsimon.github.io/Resume/"
-                >Resume</a
-              >
-              <div class="application-item-technologies">
-                <div class="tag">HTML</div>
-                <div class="tag">CSS</div>
-                <div class="tag">Git</div>
-              </div>
-            </div>
-
-            <div class="application-item-description">
-              <i
-                >A resume that can be viewed within a desktop or mobile web
-                browser that allows the viewer to quickly navigate to the listed
-                points of contact and deployed applications.</i
-              >
+              A dynamically built and scalable project management application
+              that organizes a user's active projects. It also allows users to
+              time working sessions and accrue coins that can be spent on a
+              larger number of active project slots or future feature releases.
+              This application is optimized for both desktop and mobile clients.
             </div>
           </div>
         </div>
@@ -219,9 +232,14 @@
 
       <div class="resume-section">
         <div class="resume-section-header">Education</div>
-        <div class="resume-section-content">
+        <div id="education-section-content" class="resume-section-content">
           <div class="education-info-container">
-            <div class="education-info-name">Hendrix College</div>
+            <a
+              class="education-info-name pill"
+              href="https://www.hendrix.edu"
+              target="_blank"
+              >Hendrix College</a
+            >
             <div class="education-info-degree">B.A. Economics & Business</div>
             <i class="education-info-dates">(August 2012 - December 2015)</i>
           </div>
@@ -233,59 +251,63 @@
         <div class="resume-section-content">
           <div class="reference-item">
             <div class="reference-info-container">
-              <div class="reference-name">Hadley Crowl</div>
+              <a class="reference-name pill" href="tel:2819282777"
+                >Hadley Crowl</a
+              >
               <div class="reference-position">
                 Evernote - Senior Software Engineer
               </div>
             </div>
 
-            <a class="reference-contact pill" href="mailto:hcrowl@evernote.com"
-              >hcrowl@evernote.com</a
-            >
-          </div>
-
-          <div class="reference-item">
-            <div class="reference-info-container">
-              <div class="reference-name">Rodrigo Thauby</div>
-              <div class="reference-position">
-                Evernote - Engineering Manager
-              </div>
+            <div class="reference-skills">
+              <div class="tag">React</div>
+              <div class="tag">React Native</div>
+              <div class="tag">TypeScript</div>
+              <div class="tag">Node.js</div>
+              <div class="tag">GraphQL</div>
             </div>
-
-            <a class="reference-contact pill" href="mailto:rthauby@evernote.com"
-              >rthauby@evernote.com</a
-            >
           </div>
 
           <div class="reference-item">
             <div class="reference-info-container">
-              <div class="reference-name">Sena Mawugbe</div>
+              <a class="reference-name pill" href="mailto:smawugbe1@gmail.com"
+                >Sena Mawugbe</a
+              >
               <div class="reference-position">
                 Evernote - Senior Product Manager
               </div>
             </div>
 
-            <a
-              class="reference-contact pill"
-              href="mailto:smawugbe@evernote.com"
-              >smawugbe@evernote.com</a
-            >
+            <div class="reference-skills">
+              <div class="tag">Project Management</div>
+              <div class="tag">Communication</div>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="resume-section">
-        <div class="resume-section-header">Hobbies</div>
+        <div class="resume-section-header">Core Technologies</div>
         <div class="resume-section-content">
-          <div class="hobbies-container">
-            <div class="tag">Application Development</div>
-            <div class="tag">Music Production</div>
-            <div class="tag">Cooking</div>
-            <div class="tag">Board Games</div>
-            <div class="tag">Video Games</div>
+          <div class="technologies-container">
+            <div class="tag">React</div>
+            <div class="tag">React Native</div>
+            <div class="tag">Redux</div>
+            <div class="tag">TypeScript</div>
+            <div class="tag">JavaScript</div>
+            <div class="tag">Node.js</div>
+            <div class="tag">Express</div>
+            <div class="tag">GraphQL</div>
+            <div class="tag">HTML/TSX/JSX</div>
+            <div class="tag">CSS</div>
+            <div class="tag">Git</div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="unsupported">
+      <img src="unsupported.png" alt="Unsupported" height="16" width="16" />
     </div>
   </body>
 </html>
