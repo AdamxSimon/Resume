@@ -67,7 +67,13 @@ li {
   background-color: lightgreen;
   padding: 8px;
   border-radius: 24px;
-  box-shadow: 0 0 4px gray;
+}
+
+.tag {
+  width: fit-content;
+  background-color: lightgray;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 .resume-section {
@@ -75,9 +81,8 @@ li {
 }
 
 .resume-section-header {
-  padding: 4px;
-  border-radius: 4px;
-  box-shadow: 0 0 4px gray;
+  padding: 4px 0;
+  border-bottom: 2px solid black;
   font-size: 16px;
   font-weight: bold;
 }
