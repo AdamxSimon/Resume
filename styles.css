@@ -103,6 +103,11 @@ li {
 
 .career-item-header {
   display: flex;
+  justify-content: space-between;
+}
+
+.career-item-position-container {
+  display: flex;
   align-items: center;
   gap: 8px;
 }
@@ -113,6 +118,13 @@ li {
 }
 
 .career-item-position-dates {
+  font-size: 12px;
+}
+
+.career-item-technologies,
+.application-item-technologies {
+  display: flex;
+  gap: 8px;
   font-size: 12px;
 }
 
@@ -127,12 +139,6 @@ li {
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-}
-
-.application-item-technologies {
-  display: flex;
-  gap: 8px;
-  font-size: 12px;
 }
 
 .application-item-description > i {
