@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Helvetica;
+  font-size: 13px;
   color: rgb(70, 70, 70);
 }
 
@@ -29,7 +30,6 @@ ul {
 
 li {
   margin: 4px 0;
-  font-size: 14px;
 }
 
 #resume {
@@ -67,25 +67,24 @@ li {
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 12px;
 }
 
 .pill {
   width: max-content;
   background-color: lightgreen;
-  padding: 8px;
+  padding: 6px;
   border-radius: 4px;
+  font-size: 14px;
 }
 
 .tag {
   width: fit-content;
   background-color: lightgray;
-  padding: 8px;
+  padding: 6px;
   border-radius: 4px;
 }
 
 .resume-section {
-  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -94,11 +93,11 @@ li {
   padding: 4px 0;
   border-bottom: 2px solid rgb(70, 70, 70);
   font-weight: bold;
+  font-size: 14px;
 }
 
 .resume-section-content {
   padding: 8px 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -129,9 +128,10 @@ li {
   gap: 8px;
 }
 
-.career-item-position-dates,
-.education-info-dates {
-  font-size: 12px;
+.career-item-position-company,
+.education-info-degree,
+.reference-position {
+  font-size: 14px;
 }
 
 .career-item-technologies,
@@ -140,17 +140,12 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  font-size: 12px;
 }
 
 .career-item-bullets {
   display: flex;
   flex-direction: column;
   gap: 4px;
-}
-
-.application-item-description {
-  font-size: 14px;
 }
 
 #education-section-content {
@@ -165,12 +160,7 @@ li {
   gap: 8px;
 }
 
-.technologies-container {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
+.reference-contact-info * {
   font-size: 12px;
 }
 
